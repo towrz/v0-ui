@@ -1,4 +1,3 @@
-// apps/my-nextjs-app/tsconfig.json
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -20,18 +19,9 @@
       }
     ],
     "paths": {
-      // Keep your existing alias for files within your app's root (e.g., src)
-      "@/*": ["./*", "../../packages/v0-ui/*"] // <--- IMPORTANT: Add this line!
-      // This says: when you see "@/...", try `./...` first, then `../../packages/v0-ui/...`
+      "@/*": ["./*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "../../packages/v0-ui/**/*.ts", // <--- IMPORTANT: Add this line to include v0-ui TypeScript files
-    "../../packages/v0-ui/**/*.tsx" // <--- IMPORTANT: Add this line to include v0-ui TypeScript files
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
