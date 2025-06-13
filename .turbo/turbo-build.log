@@ -6976,8 +6976,8 @@ var I;var P;var R;var $;var L;var q;var K;var ae;var ge;var be;var xe;var ve;var
 [40;96HP,$);v=P.charCodeAt($);if(v!==rt){this._emitWarning(I,`Unexpected '${P[$]}' at ${$} during parsin
 [40;96Hng of ':import' (expected ')')`,K,$,$);return $}$++;$=et.eatWhitespaceAndComments(P,$)}const crea
 [40;96HateDep=(I,P,$,q)=>{if(v===0){bt.set(I,{path:L,value:P})}else if(v===1){const v=new xe(I,P);const{
-[40;96H{line:L,column:ae}=K.get($);const{line:ge,column:be}=K.get(q);v.setLoc(L,ae,ge,be);R.addDependenc[?25l
-[40;96Hcy(v)}};let q=false;let ae=0;let ge;let be;let ve;const Ce={leftCurlyBracket:(v,I,P)=>{ae+       [41;90H[?25h+;if(ge
+[40;96H{line:L,column:ae}=K.get($);const{line:ge,column:be}=K.get(q);v.setLoc(L,ae,ge,be);R.addDependenc
+[40;96Hcy(v)}};let q=false;let ae=0;let ge;let be;let ve;const Ce={leftCurlyBracket:(v,I,P)=>{ae++;if(ge
 [40;96He===undefined){ge=0}return P},rightCurlyBracket:(v,I,R)=>{ae--;if(ge===2){createDep(P.slice(be[0]
 [40;96H],be[1]),P.slice(ve,R-1).trim(),be[1],R-1);ge=0}if(ae===0&&ge===0){q=true}return R},identifier:(v
 [40;96Hv,I,P)=>{if(ge===0){be=[I,P];ge=1}return P},colon:(v,I,R)=>{if(ge===1){ge=2;ve=et.eatWhitespace(P
@@ -23431,7 +23431,7 @@ var I;var P;var R;var $;var L;var q;var K;var ae;var ge;var be;var xe;var ve;var
 [40;96Hshould be exposed by this container.","type":"string","minLength":1},"ExposesItems":{"description
 [40;96Hn":"Modules that should be exposed by this container.","type":"array","items":{"$ref":"#/definiti
 [40;96Hions/ExposesItem"}},"ExposesObject":{"description":"Modules that should be exposed by this contai
-[40;96Hiner. Property[1Cnames are used as public paths.","type":"object","additionalProperties":{"descript
+[40;96Hiner. Property names are used as public paths.","type":"object","additionalProperties":{"descript
 [40;96Htion":"Modules that should be exposed by this container.","anyOf":[{"$ref":"#/definitions/Exposes
 [40;96HsConfig"},{"$ref":"#/definitions/ExposesItem"},{"$ref":"#/definitions/ExposesItems"}]}},"LibraryC
 [40;96HCustomUmdCommentObject":{"description":"Set explicit comments for `commonjs`, `commonjs2`, `amd`,
