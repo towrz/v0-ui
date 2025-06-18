@@ -1,0 +1,6 @@
+[?9001h[?1004h[?25l[2J[m[H]0;C:\WINDOWS\system32\cmd.exe [?25h[?25l
+> @bravoship/v0-ui@0.1.0 lint C:\Users\betot\Desktop\p\bravoship\packages\v0-ui
+> next lint[5;1H[?25h[36m[1m? [m[1mHow would you like to configure ESLint? https://nextjs.org/docs/app/api-reference/config/eslint
+[22m[?25l[36m❯  [1m[4mStrict[33m[24m (recommended)[m
+   Base
+   Cancel^C[?9001l[?1004l[30m[41m ELIFECYCLE [m [31mCommand failed with exit code 3221225786.
